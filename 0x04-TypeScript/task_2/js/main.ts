@@ -18,13 +18,13 @@ class Director implements DirectorInterface {
     }
     
     workFromHome(): string {
-        return `working from home`
+        return `Working from home`
     }
     getToWork(): string {
         return `Getting a coffee break`
     }
     workDirectorTasks(): string {
-        return ` Getting to director task`
+        return ` Getting to director tasks`
     }
 }
 
