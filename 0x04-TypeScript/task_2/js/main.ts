@@ -20,7 +20,7 @@ class Director implements DirectorInterface {
     workFromHome(): string {
         return `working from home`
     }
-    getToWork(): string{
+    getToWork(): string {
         return `Getting a coffee break`
     }
     workDirectorTasks(): string {
@@ -47,7 +47,7 @@ class Teacher implements TeacherInterface {
 
 // create a function employee 
 function createEmployee(salary: number | string): Director | Teacher {
-    if(typeof salary === 'number' && salary< 500) {
+    if (typeof salary === 'number' && salary< 500) {
         return new Teacher();
     }
     return new Director();
