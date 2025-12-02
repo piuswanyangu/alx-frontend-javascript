@@ -37,9 +37,7 @@ const teacher3: Teacher = {
 
 // director interface
  interface Directors extends Teacher{
-    
     numberOfReports: number
-
 }
 
 // example
