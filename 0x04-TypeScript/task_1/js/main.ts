@@ -36,12 +36,12 @@ const teacher3: Teacher = {
 
 
 // director interface
- interface Directors extends Teacher{
+ interface Director extends Teacher{
     numberOfReports: number
 }
 
 // example
-const director1: Directors ={
+const director1: Director ={
     firstName: "Mesh",
     lastName: "Obwaya",
     fullTimeEmployee: false,
