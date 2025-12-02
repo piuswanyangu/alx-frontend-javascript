@@ -68,15 +68,15 @@ function createEmployee(salary: number | string): Director | Teacher {
 
 type Subjects = 'Math' | 'History';
 
-function teachClass(className: Subjects): string {
-    if (className === 'Math') {
-        return 'Teaching Math'
-    } else if (className === 'History') {
-        return 'Teaching History'
-    }
-    else {
+function teachClass(todayClass: Subjects): string {
+    if (todayClass === 'Math') {
+        return 'Teaching Math';
+    } else if (todayClass === 'History') {
+        return 'Teaching History';
+    } else {
         throw new Error('Invalid subject provided');
     }
 }
+
 // test example
 console.log(teachClass('History'));
