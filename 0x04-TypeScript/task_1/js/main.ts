@@ -4,9 +4,9 @@ export interface Teacher {
     readonly lastName: string;
     // mandatory
     fullTimeEmployee: boolean;
-    location:string;
+    location: string;
 // optional property we use ? modifier
-    yearsOfExperience?:number;
+    yearsOfExperience?: number;
     // allow any other string-keyed property
     [key: string]: any;
 
