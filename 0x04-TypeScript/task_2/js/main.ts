@@ -68,10 +68,10 @@ function createEmployee(salary: number | string): Director | Teacher {
 
 type Subjects = 'Math' | 'History';
 
-function teachClass(todayClass: Subjects): string {
-    if (todayClass === 'Math') {
+function teachClass(className: Subjects): string {
+    if (className === 'Math') {
         return 'Teaching Math'
-    } else if (todayClass === 'History') {
+    } else if (className === 'History') {
         return 'Teaching History'
     }
     else {
