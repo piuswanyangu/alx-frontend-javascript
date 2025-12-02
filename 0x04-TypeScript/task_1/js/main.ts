@@ -64,6 +64,19 @@ function printTeacher({ firstName, lastName }: printTeacherFunction): string {
 // testing the function
 console.log(printTeacher({ firstName: "John", lastName: "Doe" }));
 
+// interface for student class
+interface IsStudentClass{
+    // methods defined on the class
+    workOnHomework(): string;
+    displayName(): string;
+}
+
+// interface of is student constructor
+interface IsStudentConstructor{
+    firstName: string;
+    lastName: string;
+}
+
 // writing a class
 class StudentClass{
     firstName: string;
@@ -73,10 +86,10 @@ class StudentClass{
         this.firstName = firstName;
         this.lastName = lastName;
     }
-    workOnHomework(){
+    workOnHomework(): string{
         return `Currently working`
     }
-    displayName(){
+    displayName(): string{
         return `${this.firstName} `
     }
 
