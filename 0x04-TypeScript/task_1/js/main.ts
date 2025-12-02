@@ -36,7 +36,7 @@ const teacher3: Teacher = {
 
 
 // director interface
-export interface Directors extends Teacher{
+ interface Directors extends Teacher{
     
     numberOfReports: number
 
