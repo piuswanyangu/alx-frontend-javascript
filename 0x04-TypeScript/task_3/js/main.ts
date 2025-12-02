@@ -13,13 +13,13 @@ const row: RowElement = {
 const newRowID: RowID = CRUD.insertRow(row);
 
 // step 3: create an update row with age
-const updateRow: RowElement = {
+const updatedRow: RowElement = {
     ...row,
     age: 23
 }
 
 // step 4: update the row
-CRUD.updateRow(newRowID, updateRow)
+CRUD.updateRow(newRowID, updatedRow)
 
 // step 5: delete the row
 CRUD.deleteRow(newRowID)
