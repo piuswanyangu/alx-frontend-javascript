@@ -49,3 +49,16 @@ const director1: Director ={
     numberOfReports: 5
 }
 // console.log(director1);
+
+// write an interface for the function printteacher
+interface printTeacherFunction{
+    (firstName: string,lastName: string): string
+}
+// write a function printTeacher:
+
+const printTeacher: printTeacherFunction = (firstName: string, lastName:string): string =>{
+    return `${firstName} ${lastName}`;
+}
+// testing the function
+console.log(printTeacher("Pius", "Ndubi"));
+console.log(printTeacher("John", "Doe"));
