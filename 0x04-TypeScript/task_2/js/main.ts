@@ -54,3 +54,29 @@ function createEmployee(salary: number | string): Director | Teacher {
 }
 
 // createEmployee(200)
+
+
+// Write a String literal type named Subjects allowing a variable to have the value Math or History only. Write a function named teachClass:
+// it takes todayClass as an argument
+// it will return the string Teaching Math if todayClass is Math
+// it will return the string Teaching History if todayClass is History
+// Expected result:
+// teachClass('Math');
+// Teaching Math
+// teachClass('History');
+// Teaching History
+
+type Subjects = 'Math' | 'History';
+
+function teachClass(todayClass: Subjects): string {
+    if (todayClass === 'Math') {
+        return 'Teaching Math'
+    } else if (todayClass === 'History') {
+        return 'Teaching History'
+    }
+    else {
+        throw new Error('Invalid subject provided');
+    }
+}
+// test example
+console.log(teachClass('History'));
