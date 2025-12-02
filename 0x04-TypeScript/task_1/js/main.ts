@@ -58,7 +58,7 @@ interface printTeacherFunction{
 // write a function printTeacher:
 
 function printTeacher({ firstName, lastName }: printTeacherFunction): string {
-  return `${firstName[0]}. ${lastName}`;
+  return `${firstName}. ${lastName}`;
 }
 ;
 // testing the function
