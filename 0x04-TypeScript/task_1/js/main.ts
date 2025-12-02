@@ -32,4 +32,30 @@ const teacher3: Teacher = {
     yearsOfExperience: 0
 };
 
-console.log(teacher3);
+// console.log(teacher3);
+
+
+// director interface
+export interface Directors{
+    // readonly mode
+    readonly firstName: string;
+    readonly lastName: string;
+    // mandatory
+    fullTimeEmployee: boolean;
+    location:string;
+// optional property we use ? modifier
+    yearsOfExperience?:number;
+    numberOfReports: number
+    // allow any other string-keyed property
+    [key: string]: any;
+}
+
+// example
+const director1: Directors ={
+    firstName: "Mesh",
+    lastName: "Obwaya",
+    fullTimeEmployee: false,
+    location: "Nairobi",
+    numberOfReports: 5
+}
+// console.log(director1);
