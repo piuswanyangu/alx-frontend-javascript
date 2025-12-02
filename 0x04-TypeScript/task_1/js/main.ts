@@ -78,7 +78,7 @@ interface IsStudentConstructor{
 }
 
 // writing a class
-class StudentClass{
+class StudentClass {
     firstName: string;
     lastName: string
 
