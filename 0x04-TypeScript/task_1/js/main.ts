@@ -37,14 +37,14 @@ const teacher3: Teacher = {
 
 // director interface
 export interface Directors extends Teacher{
-//     // readonly mode
-//     readonly firstName: string;
-//     readonly lastName: string;
-//     // mandatory
-//     fullTimeEmployee: boolean;
-//     location:string;
-// // optional property we use ? modifier
-//     yearsOfExperience?:number;
+    // readonly mode
+    readonly firstName: string;
+    readonly lastName: string;
+    // mandatory
+    fullTimeEmployee: boolean;
+    location:string;
+// optional property we use ? modifier
+    yearsOfExperience?:number;
     numberOfReports: number
     // allow any other string-keyed property
     [key: string]: any;
