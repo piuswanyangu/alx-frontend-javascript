@@ -1,4 +1,4 @@
-interface DirectorInterface{
+interface DirectorInterface {
     // methods 
     workFromHome(): string;
     getCoffeeBreak(): string;
@@ -6,48 +6,48 @@ interface DirectorInterface{
 }
 
 // teachers interface
-interface TeacherInterface{
+interface TeacherInterface {
     workFromHome(): string;
     getCoffeeBreak(): string
     workTeachersTasks(): string;
 }
 
-class Director implements DirectorInterface{
+class Director implements DirectorInterface {
     getCoffeeBreak(): string {
         throw new Error("Method not implemented.");
     }
     
-    workFromHome(): string{
+    workFromHome(): string {
         return `working from home`
     }
     getToWork(): string{
         return `Getting a coffee break`
     }
-    workDirectorTasks(): string{
+    workDirectorTasks(): string {
         return ` Getting to director task`
     }
 }
 
 // teachers class
-class Teacher implements TeacherInterface{
+class Teacher implements TeacherInterface {
     workTeachersTasks(): string {
         throw new Error("Method not implemented.");
     }
     
-    workFromHome(): string{
+    workFromHome(): string {
         return `Cannot work from home`
     }
-    getCoffeeBreak(): string{
+    getCoffeeBreak(): string {
         return ` Cannot have a break`
     }
-    workTeacherTasks(): string{
+    workTeacherTasks(): string {
         return `Getting to work`
     }
 }
 
 // create a function employee 
 function createEmployee(salary: number | string): Director | Teacher {
-    if(typeof salary === 'number' && salary< 500){
+    if(typeof salary === 'number' && salary< 500) {
         return new Teacher();
     }
     return new Director();
