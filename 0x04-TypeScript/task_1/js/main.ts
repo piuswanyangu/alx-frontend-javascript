@@ -52,13 +52,14 @@ const director1: Director ={
 
 // write an interface for the function printteacher
 interface printTeacherFunction{
-    (firstName: string,lastName: string): string
+    firstName: string;
+    lastName: string;
 }
 // write a function printTeacher:
 
-const printTeacher: printTeacherFunction = (firstName, lastName) => {
-  return `${firstName} ${lastName}`;
-};
+function printTeacher({ firstName, lastName }: printTeacherFunction): string {
+  return `${firstName[0]}. ${lastName}`;
+}
+;
 // testing the function
-console.log(printTeacher("Pius", "Ndubi"));
-console.log(printTeacher("John", "Doe"));
+console.log(printTeacher({ firstName: "John", lastName: "Doe" }));
